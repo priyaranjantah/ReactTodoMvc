@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ReactToDo]">
+  <listeners>
+    <listener class-name="org.maven.todomvc.DataDrivenTesting.TestNGListener"/>
+  </listeners>
+  <test name="todos(failed)">
+    <classes>
+      <class name="org.maven.todomvc.DataDrivenTesting.AddingTodo">
+        <methods>
+          <include name="OpeningBrowser"/>
+          <include name="ReadExcel"/>
+          <include name="beforelogging"/>
+        </methods>
+      </class> <!-- org.maven.todomvc.DataDrivenTesting.AddingTodo -->
+    </classes>
+  </test> <!-- todos(failed) -->
+</suite> <!-- Failed suite [ReactToDo] -->
