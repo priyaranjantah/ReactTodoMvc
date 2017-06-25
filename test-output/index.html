@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-ReactToDo">
-              <span class="suite-name border-skipped">ReactToDo</span>
+              <span class="suite-name border-failed">ReactToDo</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,60 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,  1 skipped,  </span>
+                    <span class="method-stats">7 methods, 6 failed,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-ReactToDo" class="hide-methods skipped suite-ReactToDo"> (hide)</a> <!-- hide-methods skipped suite-ReactToDo -->
-                      <a href="#" panel-name="suite-ReactToDo" class="show-methods skipped suite-ReactToDo"> (show)</a> <!-- show-methods skipped suite-ReactToDo -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ReactToDo" class="hide-methods failed suite-ReactToDo"> (hide)</a> <!-- hide-methods failed suite-ReactToDo -->
+                      <a href="#" panel-name="suite-ReactToDo" class="show-methods failed suite-ReactToDo"> (show)</a> <!-- show-methods failed suite-ReactToDo -->
                     </span>
-                    <div class="method-list-content skipped suite-ReactToDo">
+                    <div class="method-list-content failed suite-ReactToDo">
                       <span>
-                        <img width="3%" src="skipped.png"/>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ReactToDo" title="org.maven.todomvc.DataDrivenTesting.AddingTodo" hash-for-method="delete_all_element">delete_all_element</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ReactToDo" title="org.maven.todomvc.DataDrivenTesting.AddingTodo" hash-for-method="deleting_a_todo_element">deleting_a_todo_element</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ReactToDo" title="org.maven.todomvc.DataDrivenTesting.AddingTodo" hash-for-method="edit_a_todo_element">edit_a_todo_element</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ReactToDo" title="org.maven.todomvc.DataDrivenTesting.AddingTodo" hash-for-method="filtering_a_todo_element">filtering_a_todo_element</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ReactToDo" title="org.maven.todomvc.DataDrivenTesting.AddingTodo" hash-for-method="verifyHomepageTitle">verifyHomepageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-ReactToDo" title="org.maven.todomvc.DataDrivenTesting.AddingTodo" hash-for-method="view_list_todo_element">view_list_todo_element</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ReactToDo -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-ReactToDo" class="hide-methods passed suite-ReactToDo"> (hide)</a> <!-- hide-methods passed suite-ReactToDo -->
+                      <a href="#" panel-name="suite-ReactToDo" class="show-methods passed suite-ReactToDo"> (show)</a> <!-- show-methods passed suite-ReactToDo -->
+                    </span>
+                    <div class="method-list-content passed suite-ReactToDo">
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-ReactToDo" title="org.maven.todomvc.DataDrivenTesting.AddingTodo" hash-for-method="ReadExcel">ReadExcel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-ReactToDo -->
+                    </div> <!-- method-list-content passed suite-ReactToDo -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +156,145 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-ReactToDo" class="panel ReactToDo">
-          <div class="suite-ReactToDo-class-skipped">
+          <div class="suite-ReactToDo-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">org.maven.todomvc.DataDrivenTesting.AddingTodo</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete_all_element">
+                  </a> <!-- delete_all_element -->
+                  <span class="method-name">delete_all_element</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.43.168&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.maven.todomvc.DataDrivenTesting.AddingTodo.delete_all_element(AddingTodo.java:140)
+	at org.maven.todomvc.DataDrivenTesting.TestRunner.main(TestRunner.java:17)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleting_a_todo_element">
+                  </a> <!-- deleting_a_todo_element -->
+                  <span class="method-name">deleting_a_todo_element</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.43.168&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.maven.todomvc.DataDrivenTesting.AddingTodo.deleting_a_todo_element(AddingTodo.java:126)
+	at org.maven.todomvc.DataDrivenTesting.TestRunner.main(TestRunner.java:17)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="edit_a_todo_element">
+                  </a> <!-- edit_a_todo_element -->
+                  <span class="method-name">edit_a_todo_element</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.43.168&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.maven.todomvc.DataDrivenTesting.AddingTodo.edit_a_todo_element(AddingTodo.java:107)
+	at org.maven.todomvc.DataDrivenTesting.TestRunner.main(TestRunner.java:17)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="filtering_a_todo_element">
+                  </a> <!-- filtering_a_todo_element -->
+                  <span class="method-name">filtering_a_todo_element</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.43.168&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.maven.todomvc.DataDrivenTesting.AddingTodo.filtering_a_todo_element(AddingTodo.java:118)
+	at org.maven.todomvc.DataDrivenTesting.TestRunner.main(TestRunner.java:17)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomepageTitle">
+                  </a> <!-- verifyHomepageTitle -->
+                  <span class="method-name">verifyHomepageTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.maven.todomvc.DataDrivenTesting.AddingTodo.verifyHomepageTitle(AddingTodo.java:56)
+	at org.maven.todomvc.DataDrivenTesting.TestRunner.main(TestRunner.java:17)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="view_list_todo_element">
+                  </a> <!-- view_list_todo_element -->
+                  <span class="method-name">view_list_todo_element</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.43.168&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_91&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
+	at org.maven.todomvc.DataDrivenTesting.AddingTodo.view_list_todo_element(AddingTodo.java:91)
+	at org.maven.todomvc.DataDrivenTesting.TestRunner.main(TestRunner.java:17)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ReactToDo-class-failed -->
+          <div class="suite-ReactToDo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">org.maven.todomvc.DataDrivenTesting.AddingTodo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,23 +303,10 @@
                   <a name="ReadExcel">
                   </a> <!-- ReadExcel -->
                   <span class="method-name">ReadExcel</span>
-                  <div class="stack-trace">java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:738)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:124)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:124)
-	at org.maven.todomvc.DataDrivenTesting.AddingTodo.beforelogging(AddingTodo.java:26)
-	at org.maven.todomvc.DataDrivenTesting.TestRunner.main(TestRunner.java:17)
-	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ReactToDo-class-skipped -->
+          </div> <!-- suite-ReactToDo-class-passed -->
         </div> <!-- panel ReactToDo -->
         <div panel-name="test-xml-ReactToDo" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -158,11 +320,11 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;org.maven.todomvc.DataDrivenTesting.TestNGListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;todos&quot;&gt;
+  &lt;test name=&quot;todos in Chrome&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;org.maven.todomvc.DataDrivenTesting.AddingTodo&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- todos --&gt;
+  &lt;/test&gt; &lt;!-- todos in Chrome --&gt;
 &lt;/suite&gt; &lt;!-- ReactToDo --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -174,7 +336,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">todos (1 class)</span>
+                <span class="test-name">todos in Chrome (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,16 +362,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ReadExcel')
+data.setCell(0, 1, 'view_list_todo_element')
 data.setCell(0, 2, 'org.maven.todomvc.DataDrivenTesting.AddingTodo')
-data.setCell(0, 3, 32);
+data.setCell(0, 3, 33525);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ReadExcel')
+data.setCell(1, 2, 'org.maven.todomvc.DataDrivenTesting.AddingTodo')
+data.setCell(1, 3, 30778);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyHomepageTitle')
+data.setCell(2, 2, 'org.maven.todomvc.DataDrivenTesting.AddingTodo')
+data.setCell(2, 3, 7348);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'edit_a_todo_element')
+data.setCell(3, 2, 'org.maven.todomvc.DataDrivenTesting.AddingTodo')
+data.setCell(3, 3, 390);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'delete_all_element')
+data.setCell(4, 2, 'org.maven.todomvc.DataDrivenTesting.AddingTodo')
+data.setCell(4, 3, 15);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'deleting_a_todo_element')
+data.setCell(5, 2, 'org.maven.todomvc.DataDrivenTesting.AddingTodo')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'filtering_a_todo_element')
+data.setCell(6, 2, 'org.maven.todomvc.DataDrivenTesting.AddingTodo')
+data.setCell(6, 3, 0);
 window.suiteTableData['ReactToDo']= { tableData: data, tableDiv: 'times-div-ReactToDo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-ReactToDo">
               </div> <!-- times-div-ReactToDo -->
             </div> <!-- times-div -->
@@ -241,15 +427,57 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">beforelogging</span>
-                <span class="method-start">296 ms</span>
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">328 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">ReadExcel</span>
-                <span class="method-start">2324 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyHomepageTitle</span>
+                <span class="method-start">299075 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ReadExcel</span>
+                <span class="method-start">306860 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">view_list_todo_element</span>
+                <span class="method-start">337841 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">edit_a_todo_element</span>
+                <span class="method-start">371366 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">filtering_a_todo_element</span>
+                <span class="method-start">371756 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleting_a_todo_element</span>
+                <span class="method-start">371756 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">delete_all_element</span>
+                <span class="method-start">371756 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">Quit</span>
+                <span class="method-start">371787 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">terminateBrowser</span>
+                <span class="method-start">371787 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

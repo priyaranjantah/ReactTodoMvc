@@ -4,15 +4,22 @@
   <listeners>
     <listener class-name="org.maven.todomvc.DataDrivenTesting.TestNGListener"/>
   </listeners>
-  <test name="todos(failed)">
+  <test name="todos in Chrome(failed)">
     <classes>
       <class name="org.maven.todomvc.DataDrivenTesting.AddingTodo">
         <methods>
+          <include name="delete_all_element"/>
           <include name="OpeningBrowser"/>
-          <include name="ReadExcel"/>
-          <include name="beforelogging"/>
+          <include name="deleting_a_todo_element"/>
+          <include name="edit_a_todo_element"/>
+          <include name="filtering_a_todo_element"/>
+          <include name="verifyHomepageTitle"/>
+          <include name="view_list_todo_element"/>
+          <include name="launchBrowser"/>
+          <include name="terminateBrowser"/>
+          <include name="Quit"/>
         </methods>
       </class> <!-- org.maven.todomvc.DataDrivenTesting.AddingTodo -->
     </classes>
-  </test> <!-- todos(failed) -->
+  </test> <!-- todos in Chrome(failed) -->
 </suite> <!-- Failed suite [ReactToDo] -->

@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="org.maven.todomvc.DataDrivenTesting.TestNGListener"/>
     </listeners>
-    <test name="todos" preserve-order="true">
+	<test name="todos in Chrome">
         <classes>
             <class name="org.maven.todomvc.DataDrivenTesting.AddingTodo"/>
         </classes>
